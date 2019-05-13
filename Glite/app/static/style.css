@@ -1,0 +1,110 @@
+body{
+		color:white;
+	text-align:center;
+	background-image: url("wall.jpg");
+	background-size:100% 100%;
+
+}
+h1 {
+    color: white;
+	font-size: 60px;
+}
+h2 {
+    color: white;
+	font-size: 40px;
+}
+
+a {
+    color: red;
+
+	font-size: 30px;
+}
+
+input[placeholder]{
+	background: #fff;
+	width: 240px;
+	height: 70px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+
+}
+
+input[type="submit"]{
+	background: #fff;
+	width: 140px;
+	height: 70px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+}
+
+input[type="submit"]:hover{
+	background: #ff5722;
+}
+
+h5 {
+    color: red;
+	font-size: 20px;
+}
+
+h4 {
+    color: white;
+	font-size: 20px;
+}
+
+.logo {
+grid-area: lg;
+
+}
+
+.logo:hover img{
+	background-color: rgba(155, 155, 155, 0.1);
+}
+
+.logo a{
+color: orange
+
+
+}
+
+
+.footer {
+grid-area: ft;
+text-align: center;
+
+
+}
+
+
+.home {
+grid-area: hm;
+
+
+}
+
+
+.home:hover a href{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.chat {
+grid-area: ch;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+
+
+
+	grid-template-areas:
+    ". . . lg lg lg . . ."
+		". . . hm hm hm . . ."
+	". . . ch ch ch . . ."
+	 ". . . ft ft ft . . .";
+}

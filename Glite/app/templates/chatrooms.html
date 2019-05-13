@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="home">
+  {% if 'user' in session: %}
+      <h3> <a> {{session['user']}} </a>, welcome to the private chat room <a href="http://set09103.napier.ac.uk:9189/dropsession">Log out</a></h3>
+  {% endif %}
+<hr>
+
+
+<h2> Select Chat Room </h2>
+
+
+<a href="http://set09103.napier.ac.uk:9189/chat">
+<img src="static/bfv.jpg" alt="" height="300" width="300"></a>
+
+<a href="http://set09103.napier.ac.uk:9189/chat2">
+<img src="static/hs.png" alt="" height="300" width="300"></a>
+
+<a href="http://set09103.napier.ac.uk:9189/chat3">
+<img src="static/csgo.png" alt="" height="300" width="300"></a>
+
+
+<a href="http://set09103.napier.ac.uk:9189/chat4">
+<img src="static/fifa.jpg" alt="" height="300" width="300"></a>
+
+
+</div>
+
+
+{% endblock %}}

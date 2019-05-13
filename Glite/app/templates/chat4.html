@@ -1,0 +1,39 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="home">
+{% if 'user' in session: %}
+    <h3> <a> {{session['user']}} </a>, welcome to the private chat room <a href="http://set09103.napier.ac.uk:9189/dropsession">Log out</a></h3>
+{% endif %}
+<hr>
+<br>
+<a href="http://set09103.napier.ac.uk:9189/chat">
+<img src="static/bfv.jpg" alt="" height="100" width="100"></a>
+
+<a href="http://set09103.napier.ac.uk:9189/chat2">
+<img src="static/hs.png" alt="" height="100" width="100"></a>
+
+<a href="http://set09103.napier.ac.uk:9189/chat3">
+<img src="static/csgo.png" alt="" height="100" width="100"></a>
+
+
+<a href="http://set09103.napier.ac.uk:9189/chat4">
+<img src="static/fifa.jpg" alt="" height="100" width="100"></a>
+
+<img src="static/fifa192.png" alt="FIFA19" width="500" height="250">
+
+        <form action='/chat4' method='post'>
+            <input placeholder='Your message' name='post4'>
+            <input type='submit' value='Submit'>
+        </form>
+        </div>
+<div class="chat">
+        {% for post4 in posts4 %}
+            <h3>{{ post4[1] + ': ' + post4[2] }}</h3>
+        {% endfor %}
+</div>
+
+
+
+
+{% endblock %}}

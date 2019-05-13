@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block content %}
+<h1>yep</h1>
+<html>
+    <body>
+        <form action='/chat' method='post'>
+            <input placeholder='Name' name='name'>
+            <input placeholder='Your message' name='post'>
+            <input type='submit' value='Submit'>
+        </form>
+        {% for post in posts %}
+            <div>{{ post[1] + ': ' + post[2] }}</div>
+        {% endfor %}
+    </body>
+</html>
+
+
+
+ {% if name %}
+ Hello {{ name }}
+ {% endif %}
+
+{% endblock %}}
