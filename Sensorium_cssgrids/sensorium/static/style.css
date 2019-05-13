@@ -1,0 +1,288 @@
+body{
+		color:white;
+	text-align:center;
+	background-color: black;
+	background-size:100% 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	font-family: 'Staatliches', cursive;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+
+
+
+
+
+
+h1 {
+    color: white;
+	font-size: 60px;
+}
+h2 {
+    color: white;
+	font-size: 20px;
+}
+
+h4 {
+    color: white;
+	font-size: 50px;
+	font-family: 'Share Tech', sans-serif;
+}
+
+a {
+    color: red;
+
+	font-size: 30px;
+}
+
+input[placeholder]{
+	background: #fff;
+	width: 240px;
+	height: 70px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+
+}
+
+input[type="submit"]{
+	background: #fff;
+	width: 140px;
+	height: 70px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+}
+
+input[type="submit"]:hover{
+	background: #ff5722;
+}
+
+h5 {
+    color: red;
+	font-size: 20px;
+}
+
+
+
+.logo {
+grid-area: lg;
+	background-color: rgba(15, 15, 35, 1);
+background-image: url("/static/banner.png");
+background-color: #cccccc;
+ height: 800px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.logo:hover img{
+	background-color: rgba(155, 155, 155, 0.1);
+}
+
+.logo a{
+color: orange
+
+
+}
+
+
+.footer {
+grid-area: ft;
+text-align: center;
+background-color: rgba(150, 20, 20, 1);
+
+
+}
+
+
+.home {
+grid-area: hm;
+
+
+}
+
+
+.home:hover a href{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.chat {
+grid-area: ch;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+grid-area: nv;
+background-color: rgba(150, 20, 20, 1);
+	  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navlogo {
+	grid-area: nl;
+}
+
+.navlinks {
+	grid-area: nn;
+	float: right;
+	}
+
+.footertext{
+	grid-area: te;
+}
+
+.footersocial{
+	grid-area: fs;
+	float: right;
+	padding-left: 40px;
+}
+
+.footersocial img{
+	float:left;
+}
+
+.footerlogo{
+	grid-area: fl;
+	float: left;
+}
+
+.footerlogo img{
+
+}
+
+.c1 {
+grid-area: c1;
+background-color: rgba(20, 20, 20, 1);
+}
+
+.c2 {
+grid-area: c2;
+background-image: url("/static/sensorium1.jpg");
+background-color: #cccccc;
+ height: 800px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+
+
+.c3 {
+grid-area: c3;
+background-image: url("/static/eyet.jpg");
+background-color: #cccccc;
+ height: 800px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+
+.wrapper {
+	background-color: rgba(250, 250, 250, .9);
+	display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+    "nv nv nv nv nv nv nv nv nv"
+	"lg lg lg lg lg lg lg lg lg"
+	"c1 c1 c1 c1 c1 c1 c1 c1 c1"
+	"c1 c1 c1 c1 c1 c1 c1 c1 c1"
+	". c2 c2 c2 c2 c2 c2 c2 ."
+	". c2 c2 c2 c2 c2 c2 c2 ."
+	". c3 c3 c3 c3 c3 c3 c3 ."
+	". c3 c3 c3 c3 c3 c3 c3 ."
+	"ft ft ft ft ft ft ft ft ft";
+}
+
+.c2link{
+	grid-area: ll;
+	float: right;
+}
+
+.c2link img{
+	float:right;
+}
+
+.c3link{
+	grid-area: l3;
+	float: left;
+}
+
+.c3link img{
+	float:left;
+}
+
+
+.navbar{
+	display: grid;
+		grid-template-columns: repeat(9, 1fr);
+		grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+	". nl nn nn nn nn nn nn ."
+}
+
+.c2{
+	display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(9, 1fr));
+		grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+	". . . . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ll"
+}
+
+
+
+.c3{
+	display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(9, 1fr));
+		grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+	". . . . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	"l3 . . . . . . . ."
+}
+
+.footer{
+	display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(9, 1fr));
+		grid-auto-rows: minmax(50px, auto);
+	grid-template-areas:
+	". fs te te te te te fl ."
+}
+
+}
